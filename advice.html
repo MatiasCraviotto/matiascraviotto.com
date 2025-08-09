@@ -2,108 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Bookshelf — Matias Craviotto</title>
+  <title>Advice — Matias Craviotto</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Minimal, Collison-like */
     body {
-      max-width: 860px;
-      margin: 36px auto;
+      max-width: 900px;
+      margin: 40px auto;
       font-family: Georgia, serif;
-      line-height: 1.55;
-      color: #222;
+      line-height: 1.6;
+      color: #333;
       display: flex;
-      gap: 48px;
+      justify-content: space-between;
     }
 
-    .content {
-      flex: 1 1 640px; /* ~Patrick's narrow text column */
-      max-width: 640px;
-    }
+    .content { width: 70%; }
+    .menu { width: 20%; text-align: right; }
 
-    .menu {
-      flex: 0 0 140px;
-      text-align: right;
-      font-size: 0.95em;
-      color: #666;
-      position: sticky;
-      top: 24px;
-      height: max-content;
-    }
-
-    .menu a {
+    .menu a, a {
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       text-decoration: none;
-      color: #666;
-    }
-    .menu a:hover { text-decoration: underline; }
-
-    h1 {
-      margin: 0 0 20px 0;
-      font-size: 1.6rem;
-      font-weight: 600;
+      color: #007acc;
     }
 
-    p { margin: 0 0 16px 0; }
+    a { display: inline; }
 
-    /* List is ultra-simple, minimal spacing, no extra chrome */
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    h1 { margin-top: 0; }
+
+    /* Make the list a clean "punteo" */
+    ul.books {
+      list-style: disc;
+      padding-left: 22px;
+      margin-left: 0;
     }
-    ul li {
-      margin: 0 0 12px 0;
-    }
-
-    a { color: #0366d6; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* Subtle back link, optional—kept minimal */
-    .back { margin-top: 24px; }
+    ul.books li { margin: 8px 0; }
   </style>
 </head>
 <body>
   <div class="content">
-    <h1>Bookshelf</h1>
+    <h1>Advice</h1>
 
-    <p>A few books I recommend, with short notes on why they matter to me:</p>
+    <p>I’m only 24, so I don’t know if I’m qualified to give advice. Nevertheless, I’ve put together a few ideas that I think could help anyone who reads them:</p>
 
     <ul>
       <li>
-        <a href="https://en.wikipedia.org/wiki/Capital_in_the_Twenty-First_Century" target="_blank">
-          Capital in the Twenty-First Century — Thomas Piketty
-        </a>: Great for understanding how wealth and income inequality evolve over time, why capital tends to concentrate, and how this shapes modern democracies.
+        I believe in what I call the “Mati's Theory of Maximizing Paths” (still working on the name). To explain it, you need to know a little about me: as a teenager, I wanted to be an Olympian, then a systems engineer, and eventually I founded OrderEAT. Even though I didn’t end up competing in the Olympics and dropped out of university just a few courses before graduating, I’m convinced that <strong>maximizing</strong> those experiences got me to where I am. I firmly believe you should go as deep as possible into whatever you’re doing, and extract as much value as you can from those experiences. If you do this consistently, things will eventually work out so you can achieve great things.
       </li>
       <li>
-        <a href="https://www.principles.com/" target="_blank">
-          Principles — Ray Dalio
-        </a>: Taught me about radical transparency and the importance of explicitly writing down the core principles that guide your decisions and actions.
+        Try to enjoy things as they happen — something I’ve always struggled with. Whether working or on vacation, I tend to worry about the future. I don’t recommend that.
       </li>
       <li>
-        <a href="https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205" target="_blank">
-          The Hard Thing About Hard Things — Ben Horowitz
-        </a>: Great for understanding how to navigate brutal, unsolvable problems when you’re the one in charge. Brutally honest about layoffs, pivots, crises, and the mental cost of being a founder. A must-read.
+        If you enjoy working really hard, do it. Subject to that constraint, it’s not clear that the returns to effort ever diminish substantially. If you’re lucky enough to enjoy it a lot, be grateful and take full advantage. (I stole this one from Patrick Collison — I’m a huge fan of him. You can read his advice section here: <a href="https://patrickcollison.com/advice" target="_blank">patrickcollison.com/advice</a>)
       </li>
       <li>
-        <a href="https://www.amazon.com/Venture-Deals-Smarter-Lawyer-Capitalist/dp/1119594820" target="_blank">
-          Venture Deals — Brad Feld & Jason Mendelson
-        </a>: A clear and practical guide to the world of venture capital. Crucial reading for any first-time founder who wants to negotiate from a position of understanding.
+        Teach what you learn as soon as you learn it. Sharing knowledge (even before you know it really well) accelerates your own understanding and multiplies the impact of your experience. The act of explaining forces clarity, and it helps others skip mistakes you’ve already made.
       </li>
       <li>
-        <a href="https://www.robinsharma.com/book/the-monk-who-sold-his-ferrari" target="_blank">
-          The Monk Who Sold His Ferrari — Robin Sharma
-        </a>: Inspired me to start meditating (didn’t stick, but still). Loved its approach to slowing down, finding purpose, and reframing life’s priorities.
+        If you are young and just starting your career, please, please start a startup (if you dare), or at least go work for one. You might get paid less, and you will probably worry more, but you won’t be just a number. You’ll have real responsibilities, and the impact of your actions will truly matter. In my opinion, it’s the best environment to see many different areas up close and decide which ones interest you most.
       </li>
       <li>
-        <a href="https://www.goodreads.com/book/show/36623095-the-ballerina-of-auschwitz" target="_blank">
-          The Ballerina of Auschwitz — Edith Eger
-        </a>: A powerful reminder that no matter what happens, you can always choose how you respond, even in hard circumstances.
+         If you are really young, or have kids, make them commit to a sport thoroughly. Sports taught me that discipline and consistency beat talent in the long run. Also I was a big fan of competitions, and in all sports you lose more than you win, at least at the beginning, and the learning you get from those losses is extremly valuable.
       </li>
     </ul>
 
-    <p class="back"><a href="index.html">← Back home</a></p>
+
+    <p><a href="index.html">← Back home</a></p>
   </div>
 
   <div class="menu">
