@@ -15,69 +15,54 @@
       justify-content: space-between;
     }
 
-    .content {
-      width: 70%;
-    }
+    .content { width: 70%; }
+    .menu { width: 20%; text-align: right; }
 
-    .menu {
-      width: 20%;
-      text-align: right;
-    }
-
-    .menu a {
+    .menu a, a {
       display: block;
       margin-bottom: 10px;
       text-decoration: none;
       color: #007acc;
     }
 
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
+    a { display: inline; }
 
-    h1 {
-      margin-top: 0;
+    h1 { margin-top: 0; }
+
+    /* Make the list a clean "punteo" */
+    ul.books {
+      list-style: disc;
+      padding-left: 22px;
+      margin-left: 0;
     }
+    ul.books li { margin: 8px 0; }
   </style>
 </head>
 <body>
   <div class="content">
     <h1>Bookshelf</h1>
 
-    <p>A few books I recommend, with short notes on why they matter to me:</p>
+    <p>Some books I recommend:</p>
 
-    <ul>
+    <ul class="books">
       <li>
-    <a href="https://en.wikipedia.org/wiki/Capital_in_the_Twenty-First_Century" target="_blank">
-      Capital in the Twenty-First Century — Thomas Piketty
-    </a>: Great for understanding how wealth and income inequality evolve over time, why capital tends to concentrate, and how this shapes modern democracies.
-  </li>
-  <li>
-    <a href="https://www.principles.com/" target="_blank">
-      Principles — Ray Dalio
-    </a>: Taught me about radical transparency and the importance of explicitly writing down the core principles that guide your decisions and actions.
-  </li>
-  <li>
-    <a href="https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205" target="_blank">
-      The Hard Thing About Hard Things — Ben Horowitz
-    </a>: Great for understanding how to navigate brutal, unsolvable problems when you’re the one in charge. Brutally honest about layoffs, pivots, crises, and the mental cost of being a founder. A must-read.
-  </li>
-  <li>
-    <a href="https://www.amazon.com/Venture-Deals-Smarter-Lawyer-Capitalist/dp/1119594820" target="_blank">
-      Venture Deals — Brad Feld & Jason Mendelson
-    </a>: A clear and practical guide to the world of venture capital. Crucial reading for any first-time founder who wants to negotiate from a position of understanding.
-  </li>
-  <li>
-    <a href="https://www.robinsharma.com/book/the-monk-who-sold-his-ferrari" target="_blank">
-      The Monk Who Sold His Ferrari — Robin Sharma
-    </a>: Inspired me to start meditating (didn’t stick, but still). Loved its approach to slowing down, finding purpose, and reframing life’s priorities.
-  </li>
-  <li>
-    <a href="https://www.goodreads.com/book/show/36623095-the-ballerina-of-auschwitz" target="_blank">
-      The Ballerina of Auschwitz — Edith Eger
-    </a>: A powerful reminder that no matter what happens, you can always choose how you respond, even in hard circumstances.
-  </li>
+        <a href="https://www.amazon.com/s?k=Capital+in+the+Twenty-First+Century" target="_blank">Capital in the Twenty-First Century</a>: Thomas Piketty — Great for understanding how wealth and income inequality evolve over time, why capital tends to concentrate, and how this shapes modern democracies.
+      </li>
+      <li>
+        <a href="https://www.amazon.com/s?k=Principles+Ray+Dalio" target="_blank">Principles</a>: Ray Dalio — Taught me about radical transparency and the importance of explicitly writing down the core principles that guide your decisions and actions.
+      </li>
+      <li>
+        <a href="https://www.amazon.com/s?k=The+Hard+Thing+About+Hard+Things+Ben+Horowitz" target="_blank">The Hard Thing About Hard Things</a>: Ben Horowitz — Great for understanding how to navigate brutal, unsolvable problems when you’re the one in charge. Brutally honest about layoffs, pivots, crises, and the mental cost of being a founder. A must-read.
+      </li>
+      <li>
+        <a href="https://www.amazon.com/s?k=Venture+Deals+Brad+Feld+Jason+Mendelson" target="_blank">Venture Deals</a>: Brad Feld &amp; Jason Mendelson — A clear and practical guide to the world of venture capital. Crucial reading for any first-time founder who wants to negotiate from a position of understanding.
+      </li>
+      <li>
+        <a href="https://www.amazon.com/s?k=The+Monk+Who+Sold+His+Ferrari+Robin+Sharma" target="_blank">The Monk Who Sold His Ferrari</a>: Robin Sharma — Inspired me to start meditating (didn’t stick, but still). Loved its approach to slowing down, finding purpose, and reframing life’s priorities.
+      </li>
+      <li>
+        <a href="https://www.amazon.com/s?k=The+Ballerina+of+Auschwitz+Edith+Eger" target="_blank">The Ballerina of Auschwitz</a>: Edith Eger — A powerful reminder that no matter what happens, you can always choose how you respond, even in hard circumstances.
+      </li>
     </ul>
 
     <p><a href="index.html">← Back home</a></p>
