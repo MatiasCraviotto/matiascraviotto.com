@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bookshelf — Matias Craviotto</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Minimal, Collison-like */
+    body {
+      max-width: 860px;
+      margin: 36px auto;
+      font-family: Georgia, serif;
+      line-height: 1.55;
+      color: #222;
+      display: flex;
+      gap: 48px;
+    }
+
+    .content {
+      flex: 1 1 640px; /* ~Patrick's narrow text column */
+      max-width: 640px;
+    }
+
+    .menu {
+      flex: 0 0 140px;
+      text-align: right;
+      font-size: 0.95em;
+      color: #666;
+      position: sticky;
+      top: 24px;
+      height: max-content;
+    }
+
+    .menu a {
+      display: block;
+      margin-bottom: 8px;
+      text-decoration: none;
+      color: #666;
+    }
+    .menu a:hover { text-decoration: underline; }
+
+    h1 {
+      margin: 0 0 20px 0;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    p { margin: 0 0 16px 0; }
+
+    /* List is ultra-simple, minimal spacing, no extra chrome */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      margin: 0 0 12px 0;
+    }
+
+    a { color: #0366d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Subtle back link, optional—kept minimal */
+    .back { margin-top: 24px; }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Bookshelf</h1>
+
+    <p>A few books I recommend, with short notes on why they matter to me:</p>
+
+    <ul>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Capital_in_the_Twenty-First_Century" target="_blank">
+          Capital in the Twenty-First Century — Thomas Piketty
+        </a>: Great for understanding how wealth and income inequality evolve over time, why capital tends to concentrate, and how this shapes modern democracies.
+      </li>
+      <li>
+        <a href="https://www.principles.com/" target="_blank">
+          Principles — Ray Dalio
+        </a>: Taught me about radical transparency and the importance of explicitly writing down the core principles that guide your decisions and actions.
+      </li>
+      <li>
+        <a href="https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205" target="_blank">
+          The Hard Thing About Hard Things — Ben Horowitz
+        </a>: Great for understanding how to navigate brutal, unsolvable problems when you’re the one in charge. Brutally honest about layoffs, pivots, crises, and the mental cost of being a founder. A must-read.
+      </li>
+      <li>
+        <a href="https://www.amazon.com/Venture-Deals-Smarter-Lawyer-Capitalist/dp/1119594820" target="_blank">
+          Venture Deals — Brad Feld & Jason Mendelson
+        </a>: A clear and practical guide to the world of venture capital. Crucial reading for any first-time founder who wants to negotiate from a position of understanding.
+      </li>
+      <li>
+        <a href="https://www.robinsharma.com/book/the-monk-who-sold-his-ferrari" target="_blank">
+          The Monk Who Sold His Ferrari — Robin Sharma
+        </a>: Inspired me to start meditating (didn’t stick, but still). Loved its approach to slowing down, finding purpose, and reframing life’s priorities.
+      </li>
+      <li>
+        <a href="https://www.goodreads.com/book/show/36623095-the-ballerina-of-auschwitz" target="_blank">
+          The Ballerina of Auschwitz — Edith Eger
+        </a>: A powerful reminder that no matter what happens, you can always choose how you respond, even in hard circumstances.
+      </li>
+    </ul>
+
+    <p class="back"><a href="index.html">← Back home</a></p>
+  </div>
+
+  <div class="menu">
+    <a href="index.html">About</a>
+    <a href="advice.html">Advice</a>
+    <a href="bookshelf.html">Bookshelf</a>
+  </div>
+</body>
+</html>
