@@ -1,9 +1,28 @@
 body {
-  max-width: 600px;
+  max-width: 900px;
   margin: 40px auto;
   font-family: Georgia, serif;
   line-height: 1.6;
   color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.content {
+  width: 70%;
+}
+
+.menu {
+  width: 20%;
+  text-align: right;
+}
+
+.menu a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #007acc;
 }
 
 a {
@@ -11,11 +30,16 @@ a {
   text-decoration: none;
 }
 
-h1, h2 {
-  margin-top: 40px;
+h1 {
+  margin-top: 0;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+ul.books {
+  list-style: disc;
+  padding-left: 22px;
+  margin-left: 0;
+}
+
+ul.books li {
+  margin: 8px 0;
 }
