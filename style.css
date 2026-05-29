@@ -4,9 +4,14 @@ body {
   font-family: Georgia, serif;
   line-height: 1.6;
   color: #333;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+}
+
+html {
+  background-color: #fff;
 }
 
 .content {
